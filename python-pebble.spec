@@ -35,7 +35,7 @@ BuildRequires:  python3-setuptools
 %py3_install
 
 %check
-pytest
+PYTHONPATH=%{buildroot}%{python3_sitelib} pytest
 
 %files -n python3-%{modname}
 %doc README.rst
