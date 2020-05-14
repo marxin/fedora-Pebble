@@ -28,20 +28,11 @@ It wraps Python’s standard library threading and multiprocessing objects.
 %py3_install
 
 %files -n python3-%{modname}
+
 %doc README.rst
 %license LICENSE
-%{python3_sitelib}/pebble/pool/process.py
-%{python3_sitelib}/pebble/pool/thread.py
-%{python3_sitelib}/pebble/pool/channel.py
-%{python3_sitelib}/pebble/pool/base_pool.py
-%{python3_sitelib}/pebble/pool/__init__.py
-%{python3_sitelib}/pebble/concurrent/process.py
-%{python3_sitelib}/pebble/concurrent/thread.py
-%{python3_sitelib}/pebble/concurrent/__init__.py
-%{python3_sitelib}/pebble/functions.py
-%{python3_sitelib}/pebble/common.py
-%{python3_sitelib}/pebble/decorators.py
-%{python3_sitelib}/pebble/__init__.py
+%{python3_sitelib}/pebble/
+%{python3_sitelib}/Pebble-*.egg-info/
 
 %changelog
 
