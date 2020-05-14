@@ -3,6 +3,7 @@
 Name:           python-%{modname}
 Version:        4.5.1
 Release:        0
+Summary:        Threading and multiprocessing eye-candy for Python
 License:        LGPLv3
 URL:            https://github.com/noxdafox/pebble
 Source:         %{pypi_source Pebble}
@@ -15,7 +16,7 @@ It wraps Python’s standard library threading and multiprocessing objects.}
 %description %_description
 
 %package -n python3-%{modname}
-Summary:        Threading and multiprocessing eye-candy for Python
+Summary:        %{summary}
 
 %{?python_provide:%python_provide python3-%{modname}}
 BuildRequires:  git-core
@@ -32,6 +33,9 @@ BuildRequires:  python3-setuptools
 
 %install
 %py3_install
+
+%check
+%{python3} setup.py test
 
 %files -n python3-%{modname}
 %doc README.rst
