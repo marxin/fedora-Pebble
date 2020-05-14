@@ -35,7 +35,7 @@ BuildRequires:  python3-setuptools
 %py3_install
 
 %check
-%{python3} setup.py test
+pytest
 
 %files -n python3-%{modname}
 %doc README.rst
