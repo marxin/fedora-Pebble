@@ -1,8 +1,8 @@
 %global modname pebble
 
 Name:           python-%{modname}
-Version:        4.5.1%{?dist}
-Release:        0
+Version:        4.5.1
+Release:        1%{?dist}
 Summary:        Threading and multiprocessing eye-candy for Python
 License:        LGPLv3
 URL:            https://github.com/noxdafox/pebble
