@@ -1,7 +1,7 @@
 %global modname pebble
 
 Name:           python-%{modname}
-Version:        4.5.1
+Version:        4.5.1%{?dist}
 Release:        0
 Summary:        Threading and multiprocessing eye-candy for Python
 License:        LGPLv3
@@ -44,5 +44,5 @@ BuildRequires:  python3-setuptools
 %{python3_sitelib}/Pebble-*.egg-info/
 
 %changelog
-* Wed May 13 2020 Martin Liška <mliska@suse.cz> - 4.5.1
+* Wed May 13 2020 Martin Liška <mliska@suse.cz> - 4.5.1-1
 - Initial Fedora package
