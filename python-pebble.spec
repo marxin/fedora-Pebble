@@ -23,7 +23,7 @@ BuildRequires:  git-core
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 
-%description %_description
+%description -n python3-%{modname} %_description
 
 %prep
 %autosetup -n %{modname}-%{version} -Sgit
