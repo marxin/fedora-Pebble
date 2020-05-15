@@ -22,6 +22,7 @@ Summary:        %{summary}
 BuildRequires:  git-core
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
+BuildRequires:  python3-pytest
 
 %description -n python3-%{modname} %_description
 
