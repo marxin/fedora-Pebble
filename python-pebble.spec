@@ -27,7 +27,7 @@ BuildRequires:  python3-pytest
 %description -n python3-%{modname} %_description
 
 %prep
-%autosetup -n %{modname}-%{version} -Sgit
+%autosetup -n Pebble-%{version} -Sgit
 
 %build
 %py3_build
